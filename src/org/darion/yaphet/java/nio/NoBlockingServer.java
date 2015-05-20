@@ -21,7 +21,7 @@ public class NoBlockingServer implements Runnable {
 		initiation();
 
 		while (isRunning) {
-
+			
 		}
 	}
 
