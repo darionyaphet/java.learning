@@ -8,6 +8,8 @@
  */
 
 apply plugin: 'java'
+apply plugin: 'groovy'
+
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 
@@ -19,7 +21,9 @@ dependencies {
     compile 'org.xerial:sqlite-jdbc:3.8.11.2'
     compile 'org.rocksdb:rocksdbjni:4.1.0'
     compile 'com.google.guava:guava:18.0'
-
+    compile 'org.openjdk.jmh:jmh-core:1.11.3'
+    compile 'org.codehaus.groovy:groovy-all:2.4.6'
+    
     testCompile 'junit:junit:4.12'
 }
 
