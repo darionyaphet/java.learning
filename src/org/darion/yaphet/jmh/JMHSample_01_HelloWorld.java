@@ -30,11 +30,11 @@
  */
 package org.darion.yaphet.jmh;
 
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.RunnerException;
-import org.openjdk.jmh.runner.options.Options;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
+//import org.openjdk.jmh.annotations.Benchmark;
+//import org.openjdk.jmh.runner.Runner;
+//import org.openjdk.jmh.runner.RunnerException;
+//import org.openjdk.jmh.runner.options.Options;
+//import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 public class JMHSample_01_HelloWorld {
 
@@ -67,7 +67,7 @@ public class JMHSample_01_HelloWorld {
 	 * "baseline" measurements to compare against.
 	 */
 
-	@Benchmark
+	//@Benchmark
 	public void wellHelloThere() {
 		// this method was intentionally left blank.
 	}
@@ -92,8 +92,8 @@ public class JMHSample_01_HelloWorld {
 	 * running from IDE: http://openjdk.java.net/projects/code-tools/jmh/)
 	 */
 
-	public static void main(String[] args) throws RunnerException {
-		Options opt = new OptionsBuilder().include(JMHSample_01_HelloWorld.class.getSimpleName()).forks(1).build();
-		new Runner(opt).run();
+	public static void main(String[] args)  {
+//		Options opt = new OptionsBuilder().include(JMHSample_01_HelloWorld.class.getSimpleName()).forks(1).build();
+//		new Runner(opt).run();
 	}
 }
