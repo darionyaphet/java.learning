@@ -7,24 +7,24 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class SimpleServer {
-	
-	public static void main(String[] args) throws IOException {
-		System.out.println("Simple Server StartUp");
-		
-		ServerSocket service = new ServerSocket(8989);
 
-		while (true) {
-			Socket socket = service.accept();
-			InputStream inputStream = socket.getInputStream();
-			OutputStream outputStream = socket.getOutputStream();
+    public static void main(String[] args) throws IOException {
+        System.out.println("Simple Server StartUp");
 
-			int length = inputStream.read();
-			byte[] array = new byte[length];
-			System.out.println("Read Bytes : " + inputStream.read(array));
-			System.out.println(new String(array));
-			inputStream.close();
-			outputStream.close();
-			socket.close();
-		}
-	}
+        ServerSocket service = new ServerSocket(8989);
+
+        while (true) {
+            Socket socket = service.accept();
+            InputStream inputStream = socket.getInputStream();
+            OutputStream outputStream = socket.getOutputStream();
+
+            int length = inputStream.read();
+            byte[] array = new byte[length];
+            inputStream.read(array);
+            System.out.println(new String(array));
+            inputStream.close();
+            outputStream.close();
+            socket.close();
+        }
+    }
 }
