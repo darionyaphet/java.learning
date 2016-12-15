@@ -13,7 +13,7 @@ public class PipedWriter implements Runnable {
 
 	@Override
 	public void run() {
-		System.out.println("Writer Thread Start");
+		System.out.println("Writer ThreadExample Start");
 		while (true) {
 			String currentTime = System.currentTimeMillis() + "";
 			System.out.println("Send : " + currentTime);

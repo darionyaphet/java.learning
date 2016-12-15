@@ -13,7 +13,7 @@ public class PipedReader implements Runnable {
 
 	@Override
 	public void run() {
-		System.out.println("Reader Thread Start");
+		System.out.println("Reader ThreadExample Start");
 		while (true) {
 			try {
 				int lenght = inputStream.read();

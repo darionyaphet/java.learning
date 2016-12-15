@@ -23,7 +23,7 @@ dependencies {
     compile 'com.google.guava:guava:18.0'
     compile 'org.openjdk.jmh:jmh-core:1.11.3'
     compile 'org.codehaus.groovy:groovy-all:2.4.6'
-    
+    compile 'org.lwjgl:lwjgl:3.1.0'
     testCompile 'junit:junit:4.12'
 }
 

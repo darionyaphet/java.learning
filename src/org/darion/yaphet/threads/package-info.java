@@ -5,4 +5,4 @@
  * @author darion.yaphet
  *
  */
-package org.darion.yaphet.thread;
+package org.darion.yaphet.threads;

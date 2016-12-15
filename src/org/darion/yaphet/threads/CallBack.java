@@ -1,4 +1,4 @@
-package org.darion.yaphet.thread;
+package org.darion.yaphet.threads;
 
 import java.util.concurrent.Callable;
 
